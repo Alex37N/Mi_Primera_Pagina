@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Circulo </title> <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+     <nav>
+        <div class="nav">
+              <div class="Logo">
+                    <h4 class="Title"><p>Mi Primera Pagina Web </p></h4>
+              </div>
+              <div class="nave-links">
+                <ul>
+                     <li><a href="IMC.html" target="_self">IMC</a></li>
+                     <li><a href="Inicio.html" target="_self">Volver al Inicio</a></li>
+                     <li><a href="funciones1.html" target="_self">Funcion1</a></li>
+                     <li><a href="funciones2.html" target="_self">Funcion2</a></li>
+                     <li><a href="funciones3.html" target="_self">Funcion3</a></li>
+                     <li><a href="funciones4.html" target="_self">Funcion4</a></li>
+                </ul>               
+           </div>
+        </div>
+    </nav>
+</header>
+<div>
+  <p id="resultadoAreaCirculo" class="ResultCiculo"></p>
+  <script type="text/javascript">
+      function CalcularAreaCirculo(Radio) {
+          var area = Math.PI * Radio; // Calcula el área del círculo
+          var area2 = area.toFixed(2); // Lo ajusta a 2 decimales
+          return area2;
+      }
+
+      var radio = prompt("Dame el valor del círculo:", "Escribe un número entero");
+      var areaCirculo = CalcularAreaCirculo(radio);
+
+      var resultadoAreaCirculo = document.getElementById("resultadoAreaCirculo");
+
+      resultadoAreaCirculo.innerHTML = "El área del círculo es: " + areaCirculo;
+  </script>
+</div>
+    </body>
+</html>

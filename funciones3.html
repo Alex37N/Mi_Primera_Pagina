@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones 3</title> <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+              <div class="Logo">
+                    <h4 class="Title"><p>Mi Primera Pagina Web </p></h4>
+              </div>
+              <div class="nave-links">
+                <ul>
+                  <li><a href="IMC.html" target="_self">IMC</a></li>
+                  <li><a href="areaCirculo.html" target="_self">AreaCirculo</a></li>
+                  <li><a href="funciones1.html" target="_self">Funcion1</a></li>
+                  <li><a href="funciones2.html" target="_self">Funcion2</a></li>
+                  <li><a href="Inicio.html" target="_self">Inicio</a></li>
+                  <li><a href="funciones4.html" target="_self">Funcion4</a></li>
+              </ul>               
+           </div>
+        </div>
+    </nav>
+    <div class="container2">
+      <div class="card">
+        <h2 class="TitleF1">Funciones de Arrays JavaScrip</h2>
+        <p class="TextF2">En este ejemplo se convierten los grados Fahrenheit a Celsius y se utiliza la función parseInt que 
+            convierte cualquier valor a un entero.
+        </p>
+        <script type="text/javascript">
+          fruits = ["Banana", "Naranja", "Manzana", "Mango"];
+      
+          document.write('<p id="resultadoF1">Arreglo original <br></p>');
+          document.write('<p id="resultadoF1">' + fruits + "<br><br></p>");
+      
+          // Uso de la Función POP
+          document.write('<p id="resultadoF1">Arreglo sin el último elemento <br></p>');
+          fruits.pop();
+          document.write('<p id="resultadoF1">' + fruits + "<br><br></p>");
+      
+          // Uso de la función push()
+          document.write('<p id="resultadoF1">Arreglo con 2 elementos nuevos al final <br></p>');
+          fruits.push("Kiwi", "Sandia");
+          document.write('<p id="resultadoF1">' + fruits + "<br><br></p>");
+      
+          // Uso de la función join()
+          document.write('<p id="resultadoF1">Arreglo que agrega un separador entre cada elemento <br></p>');
+          let texto = fruits.join(" y tambien <br><br>");
+          document.write('<p id="resultadoF1">' + texto + "<br></p>");
+      </script>
+      
+        </div>
+    </div>
+</body>
+</html>

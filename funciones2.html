@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones 2</title> <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+              <div class="Logo">
+                    <h4 class="Title"><p>Mi Primera Pagina Web </p></h4>
+              </div>
+              <div class="nave-links">
+                <ul>
+                  <li><a href="IMC.html" target="_self">IMC</a></li>
+                  <li><a href="areaCirculo.html" target="_self">AreaCirculo</a></li>
+                  <li><a href="funciones1.html" target="_self">Funcion1</a></li>
+                  <li><a href="Inicio.html" target="_self">Inicio</a></li>
+                  <li><a href="funciones3.html" target="_self">Funcion3</a></li>
+                  <li><a href="funciones4.html" target="_self">Funcion4</a></li>
+              </ul>               
+           </div>
+        </div>
+    </nav>
+      </header>
+        <div class="container2">
+      <div class="card">
+        <h2 class="TitleF1">Funciones JavaScript</h2>
+        <p class="TextF2">En este ejemplo se convierten los grados Fahrenheit a Celsius y se utiliza la función parseInt que 
+            convierte cualquier valor a un entero.
+        </p>
+        <script type="text/javascript">
+            faren = prompt("Escribe los grados Fahrenheit para convertir a Celsius");
+            var celsius = (5/9) * (faren - 32);
+            // Utiliza parseInt para redondear el resultado a un entero
+            var celsiusRedondeado = parseInt(celsius);
+
+            document.write('<p id="resultadoF1">Convertido a grados Celsius es: ' + celsiusRedondeado + '</p>');
+        </script>
+        </div>
+    </div>
+    
+</body>
+</html>
